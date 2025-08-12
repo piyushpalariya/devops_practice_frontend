@@ -23,4 +23,4 @@ jobs:
           password: ${{ secrets.DOCKER_ACCESS_TOKEN }}
         
       - name: push image
-        run: docker push ${{env.IMAGE_NAME}}
+        run: docker push ${{env.IMAGE_NAME}}:${{env.IMAGE_TAG}}
