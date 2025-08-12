@@ -14,6 +14,6 @@ EXPOSE 5173
 
 RUN useradd -m containeruser
 USER containeruser
-RUN chown -R containeruser:containeruser /app
+RUN chown -R containeruser /app
 
 CMD [ "npm","run","dev","--","host"]
