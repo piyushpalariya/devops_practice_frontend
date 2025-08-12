@@ -13,7 +13,8 @@ RUN npm prune --omit-dev
 EXPOSE 5173
 
 RUN useradd -m containeruser
-USER containeruser
 RUN chown -R containeruser /app
+USER containeruser
+
 
 CMD [ "npm","run","dev","--","host"]
